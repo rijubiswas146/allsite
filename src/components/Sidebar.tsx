@@ -11,7 +11,7 @@ import {
   Star,
   Layers,
   Send,
-  MessageCircle,
+  Instagram,
   PlusCircle,
   ExternalLink,
 } from 'lucide-react';
@@ -165,13 +165,16 @@ export const Sidebar: React.FC<SidebarProps> = ({
             href="https://www.instagram.com/coldemotions_/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-between px-3 py-2 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] text-slate-200 text-xs font-semibold transition-colors group"
+            className="flex items-center justify-between px-3 py-2.5 rounded-xl bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-orange-500/10 hover:from-purple-500/20 hover:to-pink-500/20 border border-pink-500/20 hover:border-pink-500/40 text-slate-200 text-xs font-semibold transition-all group"
           >
-            <div className="flex items-center gap-2">
-              <MessageCircle size={14} className="text-pink-400" />
-              <span>Instagram</span>
+            <div className="flex items-center gap-2.5">
+              <Instagram size={15} className="text-pink-400 shrink-0 group-hover:scale-110 transition-transform" />
+              <div className="flex flex-col text-left">
+                <span className="text-white text-xs font-bold leading-tight">Dev Instagram</span>
+                <span className="text-[10px] text-pink-300 font-mono">Developer Profile</span>
+              </div>
             </div>
-            <ExternalLink size={12} className="text-slate-500 group-hover:text-white" />
+            <ExternalLink size={12} className="text-slate-500 group-hover:text-pink-300" />
           </a>
         </div>
       </div>

@@ -372,7 +372,7 @@ export const Header: React.FC<HeaderProps> = ({
                 >
                   <div className="flex items-center gap-2">
                     <Send size={14} />
-                    <span>Telegram Admin (@riju_md)</span>
+                    <span>Telegram Admin</span>
                   </div>
                   <ChevronRight size={13} />
                 </a>

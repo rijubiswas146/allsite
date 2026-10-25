@@ -84,7 +84,7 @@ export const SiteCard: React.FC<SiteCardProps> = ({
           title={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
         >
           <Star
-            size={13}
+            size={11.5}
             className={isFavorite ? 'fill-amber-400 text-amber-400' : 'text-slate-400 hover:text-slate-200'}
             strokeWidth={2.2}
           />
@@ -103,16 +103,16 @@ export const SiteCard: React.FC<SiteCardProps> = ({
             className="sc-logo-img"
           />
         ) : (
-          <div className="flex items-center justify-center gap-2 py-1">
+          <div className="flex items-center justify-center gap-1.5 py-0.5">
             <span
-              className="w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm text-white shadow-inner"
+              className="w-6 h-6 rounded-md flex items-center justify-center font-bold text-xs text-white shadow-inner"
               style={{
                 background: `linear-gradient(135deg, ${site.accent}, #1e293b)`,
               }}
             >
               {site.name.charAt(0).toUpperCase()}
             </span>
-            <span className="font-bold text-sm tracking-tight text-slate-200 group-hover:text-white transition-colors">
+            <span className="font-bold text-xs tracking-tight text-slate-200 group-hover:text-white transition-colors truncate max-w-[110px]">
               {site.name}
             </span>
           </div>
@@ -121,12 +121,12 @@ export const SiteCard: React.FC<SiteCardProps> = ({
 
       {/* Bottom Row: Domain & External Link Indicator */}
       <div className="sc-domain">
-        <div className="flex items-center gap-1.5 min-w-0">
-          <Globe size={11} className="shrink-0 opacity-60 text-slate-400" />
+        <div className="flex items-center gap-1 min-w-0">
+          <Globe size={9.5} className="shrink-0 opacity-60 text-slate-400" />
           <span className="truncate">{site.domain}</span>
         </div>
         <ExternalLink
-          size={11}
+          size={9.5}
           className="shrink-0 opacity-0 group-hover:opacity-100 transition-opacity text-slate-400 group-hover:text-white"
         />
       </div>
