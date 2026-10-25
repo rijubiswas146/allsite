@@ -67,12 +67,12 @@ async function startServer() {
       }
 
       const botToken = process.env.TELEGRAM_BOT_TOKEN?.trim();
-      const chatId = process.env.TELEGRAM_CHAT_ID?.trim() || '@riju_md';
+      const chatId = process.env.TELEGRAM_CHAT_ID?.trim();
 
       console.log(`[LinkerNest Submission] New site submitted: "${name}" (${url}) Category: "${category || 'General'}"`);
 
-      // If Telegram Bot token is provided, forward to Telegram Bot API
-      if (botToken) {
+      // If Telegram Bot token and chat ID are provided, forward to Telegram Bot API
+      if (botToken && chatId) {
         const escapeHtml = (text: string = '') =>
           text
             .replace(/&/g, '&amp;')
