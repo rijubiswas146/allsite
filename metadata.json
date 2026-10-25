@@ -1,0 +1,6 @@
+{
+  "name": "AllSiteHub",
+  "description": "Discover best websites across movies, anime, manga, sports, apps, and games. A curated modern web directory to search smarter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
